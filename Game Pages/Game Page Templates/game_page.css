@@ -1,0 +1,517 @@
+/*
+Color Palette:
+    #555B6E
+    #89B0AE
+    #BEE3DB
+    #FAF9F9
+    #FFD6BA
+*/
+
+* {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #373f51;
+ }
+
+/*Header*/
+
+header {
+    position: relative;
+    max-width: 100%;
+    background-color: #a9bcd0;
+    box-shadow: 0px 6px 15px 0 #363b41;
+}
+
+.headerContainer {
+    height: 50px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuButton,
+.searchButton {
+    background-color: #a9bcd0;
+    border: none;
+    width: 40px;
+    height: 50px;
+}
+
+.menuIcon,
+.searchIcon,
+.icon-tabler {
+    width: 30px;
+    min-width: 0;
+    min-height: 0;
+}
+
+.reviewLink a,
+.aboutLink a {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Merriweather', serif;
+    color: #000;
+}
+
+#dropdownMenu li {
+    height: 50px;
+    border-top: 1px solid #000;
+    background-color: #a9bcd0;
+}
+
+.reviewLink,
+.aboutLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviewLink {
+    z-index: 3;
+    animation: reviewLinkAnimation 70ms ease-in;
+}
+
+.aboutLink {
+    z-index: 2;
+    animation: aboutLinkAnimation 70ms ease-in;
+    box-shadow: 0px 6px 15px -15px #363b41;
+}
+
+.headerLinks {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    left: 0;
+    right: 0;
+    list-style: none;
+}
+
+.searchbar {
+    border-radius: 5px;
+    padding: 3px 3px;
+    outline: none;
+}
+
+#searchbarLarge {
+    border: 1px solid #555B6E;
+}
+
+#searchbarSmall {
+    display: block;
+    width: 95%;
+    height: 35px;
+    margin: 7px auto;
+    border: 1px solid #000;
+    background-color: #e8e8e8;
+    color: #000;
+    font-size: 18px;
+    font-family: 'Merriweather', serif;
+}
+
+#searchbarSmall::placeholder {
+    font-size: 18px;
+    font-family: 'Merriweather', serif;
+}
+
+#searchbarLarge::placeholder {
+    font-size: 18px;
+    font-family: 'Merriweather', serif;
+}
+
+.searchBoxSmall {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top: 50px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #a9bcd0;
+    border-top: 1px solid #000;
+    box-shadow: 0px 6px 15px -15px #363b41;
+}
+
+.siteTitle {
+    max-width: 230px;
+    text-align: center;
+}
+
+.siteTitle a {
+    font-family: 'Merriweather', serif;
+    font-size: 24px;
+    text-decoration: none;
+    color: #000;
+}
+
+.siteTitle a:hover {
+    border-bottom: 2px solid #000;
+} 
+
+#siteTitleBig,
+#siteTitleBig a {
+    display: none;
+}
+
+.topnav {
+    display: none;
+}
+
+.topnavSmall {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.showSearchBarOpen {
+    top: 100px;
+}
+
+.menuListSearchBarOpen-animation {
+    animation: searchBarDropdownAnimation 400ms;
+}
+
+.menuListSearchBarClose-animation {
+    animation: searchBarDropdownAnimation 400ms reverse;
+}
+
+@keyframes reviewLinkAnimation {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes aboutLinkAnimation {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes searchBarDropdownAnimation {
+    0% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes searchBarFadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*Article*/
+
+article {
+    padding: 40px 20px 20px 20px;
+    background-color: #373f51;
+    color: #e8e8e8;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    
+}
+
+.topImage img {
+    max-width: 100%;
+}
+
+.date {
+    font-family: 'Merriweather', serif;
+    font-size: 14px;
+    padding: 6px 0 11px 0;
+    border-bottom: 1px solid #555B6E;
+}
+
+/*Game info panel*/
+
+.infoList {
+    margin: 12px 0;
+    padding: 5px;
+    border: 2px solid #555B6E;
+    border-radius: 6px;
+    background-color: #555B6E;
+    box-shadow: 0px 6px 15px 0 #232630;
+}
+
+.infoList li {
+    font-family: 'Merriweather', serif;
+    color: #e8e8e8;
+    list-style: none;
+    padding: 3px 0;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+/*Jump to top button*/
+
+#topButton {
+    font-family: 'Montserrat', sans-serif;
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 0;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    transition: display 0.17 ease-in-out;
+    opacity: .95;
+}
+
+
+
+/*Game Review*/
+
+.review p {
+    font-family: 'Merriweather', serif;
+    margin: 12px 0;
+}
+
+/*Bottom summary panel*/
+
+.summary {
+    margin: 20px 0 10px 0;
+    padding: 10px 10px;
+    border: 2px solid #555B6E;
+    border-radius: 6px;
+    background-color: #555B6E;
+    box-shadow: 0px 6px 15px 0 #232630;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    grid-row-gap: 5px;
+}
+
+.summary h3{
+    font-size: 20px;
+}
+
+.rating {
+    grid-area: 1/1/2/3;
+    justify-self: center;
+    align-self: center;
+}
+
+/*Rating Circles*/
+
+.ratingCircle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 180px;
+    /*border: 18px solid #e8e8e8;*/
+    border-radius: 50%;
+}
+
+#ratingCircle6 {
+    background-image: linear-gradient(90deg, rgba(0,0,0,0) 50%,#ffffff 50%),linear-gradient(126deg, #82889a 50%,rgba(0,0,0,0) 50%),linear-gradient(60deg, #fff 50%, rgba(0,0,0,0) 50%);
+}
+
+#ratingCircle7 {
+    background-image: linear-gradient(90deg, rgba(0,0,0,0) 50%,#ffffff 50%),linear-gradient(162deg, #82889a 50%,rgba(0,0,0,0) 50%),linear-gradient(60deg, #fff 50%, rgba(0,0,0,0) 50%);
+}
+
+#ratingCircle8 {
+    background-image: linear-gradient(90deg, rgba(0,0,0,0) 50%,#ffffff 50%),linear-gradient(198deg, #82889a 50%,rgba(0,0,0,0) 50%),linear-gradient(60deg, #fff 50%, rgba(0,0,0,0) 50%);
+}
+
+#ratingCircle9 {
+    background: linear-gradient(90deg, rgba(0,0,0,0) 50%,#ffffff 50%),linear-gradient(234deg, #82889a 50%,rgba(0,0,0,0) 50%),linear-gradient(60deg, #fff 50%, rgba(0,0,0,0) 50%);
+}
+
+#ratingCircle10 {
+    border: 15px solid #ffffff;
+}
+
+.innerRatingCircle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #555B6E;
+}
+
+.ratingNumber {
+    font-size: 100px;
+}
+
+#summaryList {
+    font-family: 'Montserrat', sans-serif;
+    color: #e8e8e8;
+    padding: 3px 0;
+}
+
+#summaryList li {
+    font-family: 'Merriweather', serif;
+    margin: 0 0 0 20px;
+}
+
+.summaryListPositives {
+    grid-area: 2/1/3/3;
+}
+
+.summaryListNegatives {
+    grid-area: 3/1/4/3;
+}
+
+/*Media Queries*/
+
+@media only screen and (min-width: 630px) {
+
+    /*Review Summary*/
+
+    .summary {
+        grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+        grid-column-gap: 5px;
+    }
+
+    .rating {
+        grid-area: 1/1/3/2;
+    }
+
+    .summaryListPositives {
+        grid-area: 1/2/2/4;
+    }
+    
+    .summaryListNegatives {
+        grid-area: 2/2/3/4;
+    }
+}
+
+@media only screen and (min-width: 760px) {
+    /*Header*/
+
+    .headerContainer {
+        background-color: #a9bcd0;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .menuIcon {
+        width: 382px;
+        height: 25px;
+    }
+
+    #dropdownMenu {
+        background-color: #a9bcd0;
+        width: 382px;
+        height: 25px;
+    }
+
+    #dropdownMenu a {
+        position: static;
+        border-top: none;
+        margin: 0;
+    }
+
+    #dropdownMenu li {
+        height: auto;
+        margin: 0 5px 0 10px;
+        border-top: none;
+    }
+
+    .headerLinks {
+        display: inline;
+        position: absolute;
+        animation: none;
+        top: auto; 
+        left: auto; 
+        right: auto; 
+        box-shadow: none;
+        padding-top: 0;
+    }
+
+    .headerLinks li {
+        display: inline-flex;
+    }
+
+    .reviewLink a:hover,
+    .aboutLink a:hover {
+        border-bottom: 2px solid #000;
+    }
+
+    #siteTitleBig,
+    #siteTitleBig a {
+        display: inline-block;
+    }
+
+    #dropdownButton,
+    #siteTitleSmall,
+    .searchIcon {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+
+    /*Header*/
+
+    .headerContainer {
+        padding: 0 80px;
+    }
+
+    /*Article*/
+
+    #topButton {
+        top: auto;
+        bottom: 20px;
+        left: 20px;
+        transform: none;
+    }
+
+    article {
+        max-width: 1000px;
+        padding: 40px 80px 20px 80px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    /*Header*/
+
+    .headerContainer {
+        max-width: 1200px;
+    }
+
+    /*Article*/
+
+    article {
+        max-width: 1200px;
+    }
+}

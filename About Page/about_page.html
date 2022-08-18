@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./about_page.css">
+    <script src="../Game Pages/Game Page Templates/game_page.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Merriweather&family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+    <title>About Me</title>
+    <meta name="viewport" content="width=device-width, inital-scale=1, minimum-scale=1">
+</head>
+<body>
+    <header>
+        <div class="headerContainer">
+            <h1 id="siteTitleBig" class="siteTitle"><a class="homeLinkBig" href="../Home Page/home_page.html">Backlog Reviews</a></h1>
+            <div class="menuIcon">
+                <button onclick="menuDropdownFunction()" id="dropdownButton" class="menuButton">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="60" height="60" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <line x1="4" y1="6" x2="20" y2="6" />
+                        <line x1="4" y1="12" x2="20" y2="12" />
+                        <line x1="4" y1="18" x2="20" y2="18" />
+                    </svg>
+                </button>
+                <ul id="dropdownMenu" class="headerLinks">
+                    <!--<li class="homeLink"><a href="../Home Page/home_page.html">Home</a></li>-->
+                    <li class="reviewLink"><a href="../Home Page/home_page.html">Reviews</a></li>
+                    <li class="aboutLink"><a href="../About Page/about_page.html">About</a></li>
+                    <li class="topnav">
+                        <input id="searchbarLarge" class="searchbar" role="searchbox" onkeyup="search_games()" type="text" name="search" placeholder="Search...">
+                    </li>
+                </ul>
+            </div>
+            <h1 id="siteTitleSmall" class="siteTitle"><a class="homeLink" href="../Home Page/home_page.html">Backlog Reviews</a></h1>
+            <div class="searchIcon">
+                <button onclick="searchDropdownFunction()" id="dropdownButton" class="searchButton">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="60" height="60" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="10" cy="10" r="7" />
+                        <line x1="21" y1="21" x2="15" y2="15" />
+                    </svg>
+                </button>
+                <div id="topnavSmall" class="searchBoxSmall">
+                    <!--<p class="searchBoxTitle" >Search</p>-->
+                    <input id="searchbarSmall" class="searchbar" onkeyup="search_games()" type="text" name="search" placeholder="Search...">
+                </div>
+            </div>
+        </div>
+    </header>
+    <article class="mainContent">
+        <div class="aboutMe">
+            <h2 class="pageTitle">About Me</h2>
+            <p class="content" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas erat imperdiet 
+                sed euismod nisi porta. Viverra suspendisse potenti nullam ac. Amet risus nullam eget felis. At erat pellentesque adipiscing commodo elit at imperdiet 
+                dui. Turpis egestas integer eget aliquet nibh praesent tristique magna. Cras semper auctor neque vitae tempus quam. Pulvinar etiam non quam lacus 
+                suspendisse. Ultricies integer quis auctor elit sed vulputate. Urna cursus eget nunc scelerisque viverra mauris in aliquam. Amet facilisis magna etiam 
+                tempor orci eu lobortis elementum nibh. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada. Rhoncus est pellentesque elit ullamcorper 
+                dignissim cras tincidunt. Sapien pellentesque habitant morbi tristique senectus et netus. Mattis rhoncus urna neque viverra justo nec ultrices dui.</p>
+            <p class="content" >Et ligula ullamcorper malesuada proin. Donec massa sapien faucibus et molestie ac. Aliquam purus sit amet luctus venenatis lectus magna fringilla. 
+                Adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum. Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac ut. Pharetra 
+                vel turpis nunc eget lorem dolor. Et sollicitudin ac orci phasellus egestas tellus. Faucibus et molestie ac feugiat sed lectus vestibulum mattis 
+                ullamcorper. Interdum varius sit amet mattis vulputate enim nulla aliquet porttitor. Vitae turpis massa sed elementum tempus egestas sed. Lectus proin 
+                nibh nisl condimentum id venenatis. Pharetra diam sit amet nisl suscipit adipiscing bibendum est. Sagittis purus sit amet volutpat consequat mauris nunc. 
+                Nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Id donec ultrices tincidunt arcu non. Amet purus gravida quis blandit 
+                turpis. Id aliquet lectus proin nibh nisl condimentum.</p>
+            <p class="content" >Massa placerat duis ultricies lacus sed turpis. At tempor commodo ullamcorper a lacus vestibulum sed arcu. Ultrices in iaculis nunc sed augue lacus. Augue 
+                eget arcu dictum varius duis. Urna porttitor rhoncus dolor purus non enim praesent. Sagittis vitae et leo duis ut diam quam nulla. Lacus viverra vitae 
+                congue eu. Ornare suspendisse sed nisi lacus sed viverra tellus in hac. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Vestibulum morbi 
+                blandit cursus risus at ultrices mi tempus. Nisl pretium fusce id velit ut tortor. Convallis aenean et tortor at risus viverra adipiscing at. Ullamcorper 
+                malesuada proin libero nunc. Praesent elementum facilisis leo vel fringilla est. Eu facilisis sed odio morbi quis. Ac placerat vestibulum lectus mauris 
+                ultrices eros in. Eget arcu dictum varius duis. Diam sit amet nisl suscipit adipiscing bibendum est.</p>
+            <p class="content" >Amet mattis vulputate enim nulla. Laoreet sit amet cursus sit amet dictum sit amet. Duis ultricies lacus sed turpis. Elit ut aliquam purus sit amet. Dis 
+                parturient montes nascetur ridiculus mus mauris vitae. Ultrices in iaculis nunc sed augue. Suspendisse ultrices gravida dictum fusce ut placerat orci nulla 
+                pellentesque. Condimentum vitae sapien pellentesque habitant morbi tristique. Ultricies lacus sed turpis tincidunt id aliquet risus. Risus feugiat in ante 
+                metus dictum. Nec dui nunc mattis enim ut. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Feugiat scelerisque varius morbi enim nunc 
+                faucibus a pellentesque sit.</p>
+            <!--<p class="content">Hello everyone! My name is Elizabeth and I am an aspiring web developer 
+                and video game enthusiast. I'm making this blog both as a portfolio project to further 
+                my knowledge of web development, and as a way to express my love for video games (and 
+                hopefully encourage me to work through my massive backlog _(:3」∠)_). I hope that those 
+                who stumble upon my little blog will find my reviews helpful, as I truly appreciate 
+                every person who takes the time to read what I write. Thank you, and I hope I'll see 
+                you in my next review. </p>
+            <p class="signOff">-Elizabeth</p>-->
+        </div>
+        <div class="currentlyPlaying">
+            <h3 class="playingHeader">What I'm Currently Playing</h3>
+            <img class="playingImage" src="../Images/Horizon Forbidden West/horizon-forbidden-west-large.jpg">
+        </div>
+    </article>
+    
+</body>
+</html>

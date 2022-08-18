@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../Game Page Templates/game_page.css">
+    <script src="../Game Page Templates/game_page.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Merriweather&family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+    <title>Final Fantasy XV Review</title>
+    <meta name="viewport" content="width=device-width, inital-scale=1, minimum-scale=1">
+</head>
+<body>
+    <header>
+        <div class="headerContainer">
+            <h1 id="siteTitleBig" class="siteTitle"><a class="homeLinkBig" href="../../Home Page/home_page.html">Backlog Reviews</a></h1>
+            <div class="menuIcon">
+                <button onclick="menuDropdownFunction()" id="dropdownButton" class="menuButton">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="60" height="60" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <line x1="4" y1="6" x2="20" y2="6" />
+                        <line x1="4" y1="12" x2="20" y2="12" />
+                        <line x1="4" y1="18" x2="20" y2="18" />
+                    </svg>
+                </button>
+                <ul id="dropdownMenu" class="headerLinks">
+                    <!--<li class="homeLink"><a href="../Home Page/home_page.html">Home</a></li>-->
+                    <li class="reviewLink"><a href="../../Home Page/home_page.html">Reviews</a></li>
+                    <li class="aboutLink"><a href="../../About Page/about_page.html">About</a></li>
+                    <li class="topnav">
+                        <input id="searchbarLarge" class="searchbar" role="searchbox" onkeyup="search_games()" type="text" name="search" placeholder="Search...">
+                    </li>
+                </ul>
+            </div>
+            <h1 id="siteTitleSmall" class="siteTitle"><a class="homeLink" href="../../Home Page/home_page.html">Backlog Reviews</a></h1>
+            <div class="searchIcon">
+                <button onclick="searchDropdownFunction()" id="dropdownButton" class="searchButton">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="60" height="60" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="10" cy="10" r="7" />
+                        <line x1="21" y1="21" x2="15" y2="15" />
+                    </svg>
+                </button>
+                <div id="topnavSmall" class="searchBoxSmall">
+                    <!--<p class="searchBoxTitle" >Search</p>-->
+                    <input id="searchbarSmall" class="searchbar" onkeyup="search_games()" type="text" name="search" placeholder="Search...">
+                </div>
+            </div>
+        </div>
+    </header>
+    <article>
+        <h2>Final Fantasy XV Review</h2>
+        <div class="topImage">
+            <img src="../../Images/Final Fantasy XV/final-fantasy-xv-large.jpg">
+        </div>
+        <p class="date">Published: May 31, 2022</p>
+        <div class="infoList">
+            <ul>
+                <li><span class="bold">Release Date: </span>November 29, 2016</li>
+                <li><span class="bold">Developer: </span>Square Enix</li>
+                <li><span class="bold">Genre: </span>Action JRPG</li>
+                <li><span class="bold">Platform: </span>PC/Playstation 4/Xbox One</li>
+                <li><span class="bold">ESRB Rating: T</span></li>
+            </ul>
+        </div>
+        <button onclick="jumpToTop()" id="topButton" class="jump" title="Jump to Top">Jump to Top</button>
+        <div class="review">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet risus 
+                nullam eget felis eget nunc. At erat pellentesque adipiscing commodo. Eros donec ac odio tempor. Ut sem viverra aliquet eget sit amet 
+                tellus cras adipiscing. Tincidunt eget nullam non nisi est. Duis at consectetur lorem donec massa sapien faucibus et. Convallis tellus id 
+                interdum velit laoreet id donec ultrices tincidunt. Massa sapien faucibus et molestie ac feugiat sed. At erat pellentesque adipiscing 
+                commodo elit at imperdiet. Mi ipsum faucibus vitae aliquet nec ullamcorper.</p>
+
+            <p>Sapien eget mi proin sed libero enim sed faucibus turpis. Etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus. 
+                Ultrices sagittis orci a scelerisque purus. Id nibh tortor id aliquet lectus. Mi sit amet mauris commodo quis. Netus et malesuada fames ac 
+                turpis. Arcu ac tortor dignissim convallis aenean et. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim. Nam at lectus urna 
+                duis convallis convallis. Morbi non arcu risus quis varius. Laoreet suspendisse interdum consectetur libero id faucibus nisl. Sit amet 
+                facilisis magna etiam tempor orci eu lobortis elementum. Massa enim nec dui nunc mattis enim ut tellus elementum.</p>
+                
+            <p>Augue lacus viverra vitae congue. Quis varius quam quisque id. Risus commodo viverra maecenas accumsan. At tellus at urna condimentum mattis. 
+                Blandit libero volutpat sed cras ornare arcu dui vivamus arcu. Auctor neque vitae tempus quam. Magna fringilla urna porttitor rhoncus dolor 
+                purus non. Pellentesque sit amet porttitor eget dolor morbi non arcu. Feugiat nisl pretium fusce id velit ut tortor. Sit amet consectetur 
+                adipiscing elit duis tristique sollicitudin nibh sit. Dignissim cras tincidunt lobortis feugiat vivamus at augue. Platea dictumst quisque 
+                sagittis purus sit amet. Mus mauris vitae ultricies leo integer malesuada. Blandit cursus risus at ultrices mi tempus imperdiet nulla. 
+                Tristique senectus et netus et malesuada fames ac. Magna fringilla urna porttitor rhoncus dolor purus non enim praesent. Dictum non 
+                consectetur a erat nam at. Eget mauris pharetra et ultrices neque. Volutpat ac tincidunt vitae semper.</p>
+                
+            <p>Turpis egestas sed tempus urna et pharetra pharetra massa. Ut morbi tincidunt augue interdum velit. Consectetur a erat nam at lectus urna. 
+                Habitant morbi tristique senectus et netus et malesuada fames. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi 
+                tristique. Fusce ut placerat orci nulla pellentesque dignissim enim sit. Sagittis orci a scelerisque purus semper. Facilisis mauris sit 
+                amet massa vitae tortor condimentum lacinia quis. Mi eget mauris pharetra et ultrices neque ornare. Eget nunc scelerisque viverra mauris 
+                in aliquam sem fringilla.</p>
+                
+            <p>Nibh praesent tristique magna sit amet purus. Viverra mauris in aliquam sem fringilla ut morbi. Molestie nunc non blandit massa enim nec 
+                dui nunc mattis. Amet justo donec enim diam vulputate ut pharetra sit amet. Fusce ut placerat orci nulla pellentesque dignissim enim sit 
+                amet. Netus et malesuada fames ac turpis egestas. Aliquam etiam erat velit scelerisque. Etiam erat velit scelerisque in dictum non 
+                consectetur a erat. Consectetur adipiscing elit pellentesque habitant morbi tristique senectus. Sapien faucibus et molestie ac. At varius 
+                vel pharetra vel turpis. Non sodales neque sodales ut etiam sit amet nisl purus. Imperdiet sed euismod nisi porta lorem mollis. Maecenas 
+                pharetra convallis posuere morbi leo urna molestie at elementum. Egestas congue quisque egestas diam. Arcu bibendum at varius vel pharetra 
+                vel turpis nunc eget.</p>
+                
+            <p>Mattis aliquam faucibus purus in massa. Dui ut ornare lectus sit amet est placerat. Nulla at volutpat diam ut venenatis. Turpis in eu mi 
+                bibendum neque egestas congue. Sed augue lacus viverra vitae. Congue quisque egestas diam in arcu cursus euismod. Purus faucibus ornare 
+                suspendisse sed nisi lacus sed. Turpis egestas integer eget aliquet. Id consectetur purus ut faucibus pulvinar elementum. Viverra nibh 
+                cras pulvinar mattis nunc sed blandit libero volutpat. Nisl vel pretium lectus quam id leo in vitae turpis. Ut tortor pretium viverra 
+                suspendisse potenti nullam. Aliquam purus sit amet luctus venenatis lectus. Lacus vel facilisis volutpat est velit. Feugiat nisl pretium 
+                fusce id.</p>
+                
+            <p>Blandit cursus risus at ultrices mi. Curabitur gravida arcu ac tortor dignissim convallis. Bibendum enim facilisis gravida neque convallis 
+                a cras. Risus pretium quam vulputate dignissim suspendisse in. Euismod in pellentesque massa placerat duis ultricies lacus sed. Suspendisse 
+                in est ante in nibh mauris cursus mattis molestie. Nibh mauris cursus mattis molestie a iaculis at. Consequat mauris nunc congue nisi. Arcu 
+                odio ut sem nulla pharetra diam sit amet nisl. Feugiat sed lectus vestibulum mattis ullamcorper velit. Risus nullam eget felis eget. Amet 
+                commodo nulla facilisi nullam vehicula. Condimentum mattis pellentesque id nibh tortor id aliquet. Cras sed felis eget velit aliquet 
+                sagittis. Suspendisse faucibus interdum posuere lorem ipsum. Maecenas volutpat blandit aliquam etiam erat velit. Mauris rhoncus aenean vel 
+                elit scelerisque. Sit amet porttitor eget dolor morbi non arcu risus quis.</p>
+                
+            <p>Consequat mauris nunc congue nisi vitae. Consectetur libero id faucibus nisl tincidunt eget. Egestas purus viverra accumsan in nisl. 
+                Volutpat sed cras ornare arcu dui. Vitae tortor condimentum lacinia quis vel eros donec ac. Tortor id aliquet lectus proin. Justo donec 
+                enim diam vulputate. Quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus. Sapien nec sagittis aliquam malesuada. Sagittis nisl 
+                rhoncus mattis rhoncus urna neque viverra. Aliquet nec ullamcorper sit amet. Non enim praesent elementum facilisis leo vel. Amet consectetur 
+                adipiscing elit pellentesque habitant morbi tristique.</p>
+        </div>
+        <div class="summary">
+            <div class="rating">
+                <div id="ratingCircle6" class="ratingCircle">
+                    <div class="innerRatingCircle">
+                        <p class="ratingNumber">6</p>
+                    </div>
+                </div>
+            </div>
+            <div id="summaryList" class="summaryListPositives">
+                <h3>The Positives</h3>
+                <ul>
+                    <li>Tortor id aliquet lectus proin. Justo donec enim diam vulputate. Quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus.</li>
+                    <li>Blandit cursus risus at ultrices mi. Curabitur gravida arcu ac tortor dignissim convallis.</li>
+                </ul>
+            </div>
+            <div id="summaryList" class="summaryListNegatives">
+                <h3>The Negatives</h3>
+                <ul>
+                    <li>Imperdiet sed euismod nisi porta lorem mollis. Maecenas pharetra convallis posuere morbi leo urna molestie at elementum.</li>
+                    <li>Sit amet consectetur adipiscing elit duis tristique sollicitudin nibh sit. Dignissim cras tincidunt lobortis feugiat vivamus at augue.</li>
+                </ul>
+            </div>
+        </div>
+        
+    </article>
+</body>
+</html>
