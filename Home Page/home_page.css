@@ -263,6 +263,8 @@ header {
 
 .featuredImg {
     max-width: 100%;
+    display: flex;
+    align-self: flex-start;
 }
 
 .featuredTitle {
