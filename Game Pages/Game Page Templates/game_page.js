@@ -31,6 +31,6 @@ function scrollFunction() {
 /* Jump to Top of Page Button Function */
 
 function jumpToTop() {
-    document.body.scrollTop = 0;
+    document.body.scrollTop = 1;
     document.documentElement.scrollTop = 0;
 }
