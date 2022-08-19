@@ -301,7 +301,9 @@ header {
 }
 
 .featuredReview a:hover {
-    color:#89B0AE;
+    color: #E78F8E;
+    /*Possible colors:
+    #ED6B86;*/
 }
 
 /*Recent Reviews*/
@@ -336,7 +338,7 @@ header {
 }
 
 .recentPosts a:hover {
-    color: #FFD6BA;
+    border-bottom: 2px solid #FAF9F9;
 }
 
 /*All Reviews*/
@@ -409,9 +411,7 @@ header {
     transition-property: all .4s ease-in-out;
 }
 
-.card:hover {
-    transform: scale(1.1);
-}
+
 
 .postImg {
     grid-area: 1/1/2/2;
@@ -641,6 +641,10 @@ header {
 
     .card {
         margin-bottom: 40px;
+    }
+
+    .card:hover {
+        transform: scale(1.1);
     }
 }
 
