@@ -263,7 +263,6 @@ header {
 .featuredImg img,
 .featuredImg {
     max-width: 100%;
-    height: auto;
 }
 
 .featuredTitle {
